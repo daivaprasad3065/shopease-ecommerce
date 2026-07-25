@@ -1,0 +1,88 @@
+# Global ignores
+.DS_Store
+Thumbs.db
+
+# Documentation (you said it's not needed)
+All Documentations/
+All Documentation/
+
+# ==========================
+# Backend Ignores
+# ==========================
+
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.env.development
+backend/.env.production
+backend/coverage/
+backend/tests/
+backend/src/tests/
+backend/*.log
+backend/logs/
+backend/debug.log
+
+# Ignore uploads if any
+backend/uploads/
+backend/public/uploads/
+
+# Ignore any build folder (if added later)
+backend/dist/
+backend/build/
+
+# ==========================
+# Frontend-User Ignores (Next.js)
+# ==========================
+
+frontend-user/node_modules/
+frontend-user/.env
+frontend-user/.env.local
+frontend-user/.env.development
+frontend-user/.env.production
+
+# Next.js build output
+frontend-user/.next/
+frontend-user/out/
+
+# Cache files
+frontend-user/.turbo/
+frontend-user/.vercel/
+
+# Logs
+frontend-user/*.log
+frontend-user/logs/
+frontend-user/debug.log
+
+# ==========================
+# Future Frontend-Admin Ignores
+# ==========================
+
+frontend-admin/node_modules/
+frontend-admin/.next/
+frontend-admin/out/
+frontend-admin/.env
+frontend-admin/.env.local
+frontend-admin/*.log
+
+# ==========================
+# Test files (if not needed)
+# ==========================
+**/__tests__/
+**/tests/
+**/test/
+*.test.js
+*.spec.js
+
+# ==========================
+# System / Editor files
+# ==========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# Root-level node_modules (if anyone accidentally installed here)
+# ==========================
+node_modules/
